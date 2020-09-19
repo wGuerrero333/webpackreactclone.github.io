@@ -1,7 +1,13 @@
-import './styles/index.css'
+import React from "react";
+import Home from "./components/Home";
 
-import React from 'react'
-import { render } from 'react-dom'
-import App from './components/app.jsx'
+function App() {
+  return (
+    <div>
+      <h3>Hola mundillosss</h3>
+      <Home />
+    </div>
+  );
+}
 
-render(<App />, document.getElementById('container'))
+export default App;

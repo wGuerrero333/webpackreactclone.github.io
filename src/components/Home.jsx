@@ -1,11 +1,11 @@
 import React from 'react'
 
-function App(){
+function Home(){
     return (
         <div>
-           <h1>Linda app React :S</h1>
+           <h1>Este es el Home</h1>
         </div>
     )
 }
 
-export default App
+export default Home
