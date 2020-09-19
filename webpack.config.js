@@ -28,6 +28,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: "React app",
+      template: path.resolve(__dirname, "./src/index.html"),
     }),
   ],
 };
