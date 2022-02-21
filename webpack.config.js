@@ -1,8 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+// en modo dev me da el codigo en modo debug
 module.exports={
-    mode: "development",
+    mode: "production",
     entry: './src/index.js',
     output:{
         path:path.resolve(__dirname,'./dist'),
@@ -21,7 +21,6 @@ module.exports={
       },
       // se agrega el html a la carpeta dist
       plugins: [
-    
         new HtmlWebpackPlugin({
           template: './src/index.html'
         })]

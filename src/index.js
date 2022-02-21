@@ -4,6 +4,9 @@ const n2 = document.querySelector('#n2');
 const op = document.querySelector('#op');
 const res = document.querySelector('#res');
 
+// importo el css para que el loader lo procese
+import './main.css'
+
 import sum from './sum'
 import substraction from './substraction'
 import multiplication from './multiplication'
