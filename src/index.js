@@ -12,6 +12,13 @@ import substraction from './substraction'
 import multiplication from './multiplication'
 import division from './division'
 
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+ReactDOM.render(
+    'Usando React para inyectar codigo en el DOM',
+    document.getElementById('container__react')
+)
 
 
 
