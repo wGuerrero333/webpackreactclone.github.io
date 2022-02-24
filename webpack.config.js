@@ -4,23 +4,29 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // se definen las rules para js
 const javascriptRules = {
-  test: /\.js$/,
+
+  test: /\.js|jsx$/,
   exclude: /node_modules/,
   use: {
     loader: 'babel-loader',
     options: {
       presets: [
         '@babel/preset-react',
-        '@babel/preset-env'
+        // '@babel/preset-env'
       ],
-      plugins: ['@babel/plugin-proposal-optional-chaining']
+      // plugins: ['@babel/plugin-proposal-optional-chaining']
     }
   }
 }
 
+const cssRules = {
+  test: /\.css$/i,
+  use: ["style-loader", "css-loader"],
+}
+
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -30,11 +36,27 @@ module.exports = {
   module: {
     rules: [
       {
-  
-        test: /\.css$/i,
+        test: /\.js|jsx$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-react',
+              // '@babel/preset-env'
+            ],
+            // plugins: ['@babel/plugin-proposal-optional-chaining']
+          }
+        }
+      },
+      {
+        test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
     ],
+  },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"],
   },
   // se agrega el html a la carpeta dist
   plugins: [

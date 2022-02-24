@@ -18,8 +18,15 @@ var ReactDOM = require('react-dom');
 ReactDOM.render(
     'Usando React para inyectar codigo en el DOM',
     document.getElementById('container__react')
+    
 )
 
+ReactDOM.render(
+    <React.StrictMode>
+           <h1>Este es el Home</h1>
+    </React.StrictMode>,
+    document.getElementById('container__react')
+)
 
 
 btn.addEventListener('click', e =>{
