@@ -4,7 +4,7 @@ import Home from "./components/Home";
 function App() {
   return (
     <div>
-      <h3>Hola mundillosss</h3>
+      <h3>Hola inmundo</h3>
       <Home />
     </div>
   );

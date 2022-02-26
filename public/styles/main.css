@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap);
 #root2 {
     background-color: rgb(165, 9, 17);
     font-size: 20px;
@@ -7,8 +8,6 @@
     margin-right: 10px;
     border-radius: 10px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 :root{
     font-size: 16px;
@@ -51,3 +50,4 @@ body{
     display: block;
     width: 100%;
 }
+
